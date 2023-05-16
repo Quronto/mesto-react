@@ -1,44 +1,21 @@
-# Проект: Место
+# Проект Место-React. Учебный проект Яндекс Практикум
+___
 
-Тут представлен проект "Mesto". В нём можно делиться своими фото пейзажей, а также, понравившиеся фотки можно
- отметить лайком. Я использовал несколько интересных технологий, вот некторые из них с примерами: 
-1. Тег @media мы использовали для реализации одинаковых свойств с разными значениями для разных разрешений экрана:
-``` css
-@media screen and (max-width: 320px) {
-  .elements {
-    grid-template-rows: repeat(auto-fit, 361px);
-  }
-}
-```
-2. Использовали calc() для упрощения адаптивной вёрстки:
-``` css
-max-width: calc(100% - 296px);
-```
-3. А также использовали grid для создании сетки:
-``` css
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(213px, 1fr));
-  gap: 16px;
-}
-  ```
+### Цель проекта:
 
-  4. Также подключили и использовали JavaScript, для реализации попапа и его функций:
-  ``` js
-  const editButton = document.querySelector(".profile__edit-button_type_edit");
-
-  const popup = document.querySelector(".popup");
-
-  const closeButton = popup.querySelector(".popup__close");
+1. Портирование веб-приложения на React
+2. Изучить утилиту Create React App
+3. Изучить технологию React Hooks
+4. Ознакомиться с декларативным подходом в React
+4. Изучить что такое JavaScript-библиотека для создания пользовательских интерфейсов
 
 
-  function toggleOpenClosePopup(){
-    popup.classList.toggle("popup_opened");
-  };
+___
+#### Технологии, используемые в проекте:
 
-  editButton.addEventListener("click", toggleOpenClosePopup);
-  closeButton.addEventListener("click", toggleOpenClosePopup);
-  ```
-
-  Ссылка на проект: https://quronto.github.io/mesto/
+* Nested БЭМ;
+* HTML5;
+* CSS3;
+* JavaScript (_ООП, Асинхронность, работа с API_);
+* Webpack.
+* React JS;
