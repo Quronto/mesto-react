@@ -1,10 +1,10 @@
 import mainLogo from "../images/header-logo.svg";
 
-function Header(props) {
+function Header({ alt }) {
   return (
     <>
       <header className="header">
-        <img src={mainLogo} alt={props.alt} className="header__logo" />
+        <img src={mainLogo} alt={alt} className="header__logo" />
       </header>
     </>
   );
